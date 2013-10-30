@@ -1,0 +1,37 @@
+Task.o: ../Source/Task.c ../Source/Task.h ../Source/Types.h \
+ ../Source/List.h ../Source/Descriptor.h
+Timer_RTC.o: ../Source/Timer_RTC.c ../Source/Timer.h ../Source/Types.h \
+ ../Source/InlineAssemblyUtility.h ../Source/Task.h ../Source/List.h
+InlineAssemblyUtility.o: ../Source/InlineAssemblyUtility.c \
+ ../Source/InlineAssemblyUtility.h ../Source/Types.h ../Source/Task.h \
+ ../Source/List.h
+Keyboard.o: ../Source/Keyboard.c ../Source/Types.h \
+ ../Source/InlineAssemblyUtility.h ../Source/Task.h ../Source/List.h \
+ ../Source/Keyboard.h ../Source/Queue.h ../Source/Synchronization.h
+PIC.o: ../Source/PIC.c ../Source/PIC.h ../Source/Types.h
+Utility.o: ../Source/Utility.c ../Source/Utility.h ../Source/Types.h \
+ ../Source/InlineAssemblyUtility.h ../Source/Task.h ../Source/List.h
+Console.o: ../Source/Console.c ../Source/Console.h ../Source/Types.h \
+ ../Source/InlineAssemblyUtility.h ../Source/Task.h ../Source/List.h \
+ ../Source/Keyboard.h ../Source/Utility.h
+Descriptor.o: ../Source/Descriptor.c ../Source/Descriptor.h \
+ ../Source/Types.h ../Source/Utility.h ../Source/ISR.h
+InterruptHandler.o: ../Source/InterruptHandler.c \
+ ../Source/InterruptHandler.h ../Source/Types.h ../Source/PIC.h \
+ ../Source/Utility.h ../Source/Task.h ../Source/List.h \
+ ../Source/Descriptor.h
+List.o: ../Source/List.c ../Source/List.h ../Source/Types.h
+Queue.o: ../Source/Queue.c ../Source/Queue.h ../Source/Types.h
+Synchronization.o: ../Source/Synchronization.c \
+ ../Source/Synchronization.h ../Source/Types.h ../Source/Utility.h \
+ ../Source/InlineAssemblyUtility.h ../Source/Task.h ../Source/List.h
+ConsoleShell.o: ../Source/ConsoleShell.c ../Source/ConsoleShell.h \
+ ../Source/Types.h ../Source/Console.h ../Source/Keyboard.h \
+ ../Source/Utility.h ../Source/Timer.h ../Source/InlineAssemblyUtility.h \
+ ../Source/Task.h ../Source/List.h ../Source/Synchronization.h
+Main.o: ../Source/Main.c ../Source/Types.h ../Source/Utility.h \
+ ../Source/Descriptor.h ../Source/InlineAssemblyUtility.h \
+ ../Source/Task.h ../Source/List.h ../Source/Keyboard.h ../Source/PIC.h \
+ ../Source/Console.h ../Source/ConsoleShell.h ../Source/Timer.h
+Timer_PIT.o: ../Source/Timer_PIT.c ../Source/Timer.h ../Source/Types.h \
+ ../Source/InlineAssemblyUtility.h ../Source/Task.h ../Source/List.h

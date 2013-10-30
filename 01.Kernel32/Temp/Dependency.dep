@@ -1,0 +1,5 @@
+ModeSwitch.o: ../Source/ModeSwitch.c ../Source/ModeSwitch.h \
+ ../Source/Types.h
+Page.o: ../Source/Page.c ../Source/Page.h ../Source/Types.h
+Main.o: ../Source/Main.c ../Source/Types.h ../Source/Page.h \
+ ../Source/ModeSwitch.h
